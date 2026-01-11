@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Missing number</title>
 </head>
 <body>
+     <h1>🧩 Find the Missing Number</h1>
+
+    <div class="box">
+        <h2>The Problem (Super Simple)</h2>
+        <p>You have numbers from <strong>1 to n</strong>.</p>
+        <p>👉 One number is missing.</p>
+
+        <p><strong>Example:</strong></p>
+        <pre>[1, 2, 4, 5]</pre>
+
+        <p>Numbers should be:</p>
+        <pre>1, 2, 3, 4, 5</pre>
+
+        <p>👉 <strong>3 is missing</strong></p>
+    </div>
+
+    <div class="box">
+        <h2>🧠 Think of It Like This (Real-Life Example)</h2>
+        <p>Imagine you have 5 candies numbered:</p>
+        <pre>1  2  3  4  5</pre>
+
+        <p>But your friend gives you only:</p>
+        <pre>1  2  4  5</pre>
+
+        <p>You ask:</p>
+        <p><em>"Which candy number is missing?"</em></p>
+    </div>
+
+    <div class="box">
+        <h2>🔢 Step 1: Add ALL numbers from 1 to n</h2>
+        <p>If <strong>n = 5</strong>:</p>
+        <pre>1 + 2 + 3 + 4 + 5 = 15</pre>
+        <p>So <strong>15</strong> is the total if nothing was missing.</p>
+    </div>
+
+    <div class="box">
+        <h2>🔢 Step 2: Add the numbers you ACTUALLY have</h2>
+        <pre>[1, 2, 4, 5]</pre>
+        <pre>1 + 2 + 4 + 5 = 12</pre>
+    </div>
+
+    <div class="box">
+        <h2>➖ Step 3: Subtract</h2>
+        <pre>15 - 12 = 3</pre>
+        <p>🎉 <strong>3 is the missing number</strong></p>
+    </div>
+
+    <div class="box">
+        <h2>🧑‍💻 JavaScript Code</h2>
+        <pre>
+function findMissingNumber(arr, n) {
+    let expectedSum = n * (n + 1) / 2;
+    let actualSum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        actualSum = actualSum + arr[i];
+    }
+
+    return expectedSum - actualSum;
+}
+        </pre>
+    </div>
+
+    <div class="box">
+        <h2>🧪 Example Run</h2>
+        <pre>
+let numbers = [1, 2, 4, 5];
+let n = 5;
+
+console.log(findMissingNumber(numbers, n)); // 3
+        </pre>
+    </div>
    <script src="script.js"></script> 
 </body>
 </html>
