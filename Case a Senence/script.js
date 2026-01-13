@@ -7,3 +7,13 @@ function capitalizeWords(sentence) {
     return words.join(" "); // Join words back into a sentence
 }
 console.log(capitalizeWords("hello world from javascript")); // Output: "Hello World From Javascript"
+
+// easier way better than for loop
+
+function capitalizeWords2(sentence) {
+  return sentence
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter using map
+    .join(" ");
+}
+console.log(capitalizeWords2("hello world from javascript")); // Output: "Hello World From Javascript
