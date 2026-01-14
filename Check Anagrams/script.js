@@ -18,3 +18,20 @@ function areAnagrams(str1, str2) {
 console.log(areAnagrams("Listen", "Silent")); // true
 console.log(areAnagrams("Hello", "World"));   // false
 
+// This is the method that i understand better
+
+
+function areAnagrams2(str1, str2) {
+  // Convert to lowercase
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
+
+  // Split into letters, sort them, and join back
+  const sortedStr1 = str1.split("").sort().join("");
+  const sortedStr2 = str2.split("").sort().join("");
+
+  // Compare the sorted strings
+  return sortedStr1 === sortedStr2;
+}
+console.log(areAnagrams2("Triangle", "Integral")); // true
+console.log(areAnagrams2("Apple", "Pabble"));     // false
