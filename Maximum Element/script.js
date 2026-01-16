@@ -13,3 +13,10 @@ function findMax(arr) {
 }
 console.log(findMax([3, 1, 4, 1, 5, 9, 2, 6, 5])); // Output: 9
 console.log(findMax([])); // Output: null
+
+// Easier method using Math.max and spread operator
+function findMax2(arr) {
+  return Math.max(...arr);
+}
+
+console.log(findMax2([3, 7, 2, 9, 5])); // 9
