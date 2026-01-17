@@ -12,3 +12,22 @@ function isPrime(num) {
 }   
 console.log(isPrime(11)); // true
 console.log(isPrime(15)); // false
+
+// Easier way
+
+function isPrime2(n) {
+  if (n < 2) return false; // 0 and 1 are not prime
+
+  for (let i = 2; i < n; i++) { // check all numbers from 2 to n-1
+    if (n % i === 0) {
+      return false; // divisible by i → not prime
+    }
+  }
+
+  return true; // no divisors found → prime
+}
+
+console.log(isPrime2(2));  // true
+console.log(isPrime2(3));  // true
+console.log(isPrime2(4));  // false
+console.log(isPrime2(5));  // true
