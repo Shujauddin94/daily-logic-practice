@@ -21,3 +21,28 @@ function countPalindromicSubstrings(s) {
 }
 console.log(countPalindromicSubstrings("abba")); // Output: 6
 console.log(countPalindromicSubstrings("abc"));  // Output: 3
+
+// Another way to solve this problem
+
+function countPalindromicSubstrings2(s) {
+  let count = 0;
+
+  function expand(left, right) {
+    while (left >= 0 && right < s.length && s[left] === s[right]) {
+      count++;
+      left--;
+      right++;
+    }
+  }
+
+  for (let i = 0; i < s.length; i++) {
+    // Odd-length palindromes
+    expand(i, i);
+    // Even-length palindromes
+    expand(i, i + 1);
+  }
+
+  return count;
+}
+console.log(countPalindromicSubstrings2("abba")); // Output: 6
+console.log(countPalindromicSubstrings2("level"));  // Output: 7
