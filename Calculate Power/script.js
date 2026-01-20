@@ -3,3 +3,9 @@ function calculatePower(base, exponent) {
     return Math.pow(base, exponent); // Using Math.pow to calculate power
 }
 console.log(calculatePower(2, 3)); // Output: 8
+
+// Another way to do it using exponentiation operator.
+function calculatePower2(base, exponent) {
+    return base ** exponent;
+}
+console.log(calculatePower2(2, 3)); // Output: 8
