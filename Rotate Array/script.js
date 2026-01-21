@@ -5,3 +5,17 @@ function rotateArray(arr, steps) {
     return arr.slice(-steps).concat(arr.slice(0, len - steps)); // Rotate the array
 }
 console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
+
+// Easier method
+
+function rotateRight(arr, k) {
+  const n = arr.length;
+  k = k % n;
+
+  for (let i = 0; i < k; i++) {
+    arr.unshift(arr.pop());
+  }
+
+  return arr;
+}
+console.log(rotateRight([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
