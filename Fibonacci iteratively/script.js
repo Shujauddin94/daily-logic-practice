@@ -12,3 +12,17 @@ function fibonacci(n) {
 }
 console.log(fibonacci(6)); // Output: 8
 console.log(fibonacci(10)); // Output: 55
+
+// Another way using array to store Fibonacci numbers
+function fibonacciArr(n) {
+  if (n < 0) return null;
+  const fib = [0, 1];
+
+  for (let i = 2; i <= n; i++) {
+    fib[i] = fib[i - 1] + fib[i - 2];
+  }
+
+  return fib[n];
+}
+console.log(fibonacciArr(6)); // Output: 8
+console.log(fibonacciArr(10)); // Output: 55
