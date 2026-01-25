@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GCD Explaination</title>
 </head>
 <body>
+    <h1>Greatest Common Divisor (GCD)</h1>
+
+  <p>
+    The <strong>Greatest Common Divisor (GCD)</strong> of two integers
+    <em>a</em> and <em>b</em> is the largest positive integer that divides
+    both numbers without leaving a remainder.
+  </p>
+
+  <h2>Mathematical Definition</h2>
+  <p>
+    If <em>d</em> is the GCD of <em>a</em> and <em>b</em>, then:
+  </p>
+
+  <ul>
+    <li><em>d | a</em> (d divides a)</li>
+    <li><em>d | b</em> (d divides b)</li>
+    <li>For any integer <em>c</em> that divides both <em>a</em> and <em>b</em>,
+        <em>c ≤ d</em></li>
+  </ul>
+
+  <h2>Euclidean Algorithm</h2>
+  <p>
+    The Euclidean Algorithm is based on the principle:
+  </p>
+
+  <p><strong>GCD(a, b) = GCD(b, a mod b)</strong></p>
+
+  <p>
+    This process is repeated until the remainder becomes zero.
+    The last non-zero remainder is the GCD.
+  </p>
+
+  <h2>Example</h2>
+  <p>
+    Find the GCD of 48 and 18:
+  </p>
+
+  <ol>
+    <li>48 mod 18 = 12</li>
+    <li>18 mod 12 = 6</li>
+    <li>12 mod 6 = 0</li>
+  </ol>
+
+  <p>
+    Since the remainder is now 0, the GCD is <strong>6</strong>.
+  </p>
     <script src="script.js"></script>
 </body>
 </html>
