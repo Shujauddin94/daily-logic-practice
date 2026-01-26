@@ -11,3 +11,15 @@ function fizzBuzz(n) {
     }
 }
 console.log(fizzBuzz(15)); // Output: FizzBuzz
+
+// Another shorter way
+
+function fizzBuzz2(n) {
+  let result = "";
+
+  if (n % 3 === 0) result += "Fizz";
+  if (n % 5 === 0) result += "Buzz";
+
+  return result || n.toString();
+}
+console.log(fizzBuzz2(10)); // Output: Buzz
