@@ -1,12 +1,12 @@
 // Given an array of numbers and a target sum, find two numbers in the array that add up to the target and return their indexes.
 function twoSum(numbers, target) {
-    const numMap = new Map();
+    const numMap = new Map(); // Map to store numbers and their indices
     for (let i = 0; i < numbers.length; i++) {
-        const complement = target - numbers[i];
-        if (numMap.has(complement)) {
-            return [numMap.get(complement), i]; 
+        const complement = target - numbers[i]; // Calculate complement
+        if (numMap.has(complement)) { // Check if complement exists
+            return [numMap.get(complement), i];  // Return indices of the two numbers
         }
-        numMap.set(numbers[i], i);
+        numMap.set(numbers[i], i); // Store number and its index
     }
     return null;
 }
