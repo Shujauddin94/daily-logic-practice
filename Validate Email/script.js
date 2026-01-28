@@ -6,3 +6,11 @@ function isValidEmail(email) {
 }
 console.log(isValidEmail("test@example.com"));// true
 console.log(isValidEmail("invalid-email"));// false
+
+// Another way to validate email addresses
+function isValidEmail2(email) {
+  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return regex.test(email);
+}
+console.log(isValidEmail2("test@example.com"));// true
+console.log(isValidEmail2("invalid-email"));// false
