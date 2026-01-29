@@ -7,3 +7,13 @@ function countCharacterOccurrences(str) {
     return charCount;
 }
 console.log(countCharacterOccurrences("hello world")); //{ h: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1 }
+
+// Another approach using Map
+function countCharacterOccurrencesMap(str) {
+    const charCountMap = new Map();
+    for (let char of str) {
+        charCountMap.set(char, (charCountMap.get(char) || 0) + 1);
+    }
+    return charCountMap;
+}
+console.log(countCharacterOccurrencesMap("hello world")); //Map(8) { 'h' => 1, 'e' => 1, 'l' => 3, 'o' => 2, ' ' => 1, 'w' => 1, 'r' => 1, 'd' => 1 }
