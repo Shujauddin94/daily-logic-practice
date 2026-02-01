@@ -13,3 +13,20 @@ function subarraySum(nums, k) {
     return count;
 }
 console.log(subarraySum([1, 1, 1], 2)); // Output: 2
+
+// Another way to solve the problem using prefix sums and a hash map
+function subarraySumAlternative(nums, k) {
+    const prefixSumCount = new Map();
+    prefixSumCount.set(0, 1);
+    let currentSum = 0;
+    let totalCount = 0;
+    for (let num of nums) {
+        currentSum += num;
+        if (prefixSumCount.has(currentSum - k)) {
+            totalCount += prefixSumCount.get(currentSum - k);
+        }
+        prefixSumCount.set(currentSum, (prefixSumCount.get(currentSum) || 0) + 1);
+    }
+    return totalCount;
+}
+console.log(subarraySumAlternative([1, 2, 3], 3)); // Output: 2
