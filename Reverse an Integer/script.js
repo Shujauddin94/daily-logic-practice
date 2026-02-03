@@ -8,7 +8,7 @@ console.log(reverseInteger(12345)); // Output: 54321
 
 // Another way 
 function reverseInteger(num) {
-  const reversed = Math.abs(num)
+  const reversed = Math.abs(num) // Get absolute value
     .toString()
     .split('')
     .reverse()
