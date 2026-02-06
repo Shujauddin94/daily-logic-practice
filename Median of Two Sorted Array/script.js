@@ -45,7 +45,7 @@ function findMedianSortedArrays(nums1, nums2) {
 
   while (low <= high) {
     const partitionX = Math.floor((low + high) / 2);
-    const partitionY = Math.floor((x + y + 1) / 2) - partitionX;
+    const partitionY = Math.floor((x + y + 1) / 2) - partitionX; // Ensure left half has one more element if total length is odd
 
     const maxLeftX = partitionX === 0 ? -Infinity : nums1[partitionX - 1];
     const minRightX = partitionX === x ? Infinity : nums1[partitionX];
@@ -66,7 +66,7 @@ function findMedianSortedArrays(nums1, nums2) {
     }
     // Move left
     else if (maxLeftX > minRightY) {
-      high = partitionX - 1;
+      high = partitionX - 1; 
     }
     // Move right
     else {
