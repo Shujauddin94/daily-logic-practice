@@ -1,7 +1,7 @@
 // Write a function to count the number of palindromic substrings in a string.
 function countPalindromicSubstrings(s) {
     let count = 0;
-    const n = s.length;
+    const n = s.length; // Length of the string
 
     // Helper function to expand around center
     function expandAroundCenter(left, right) {
