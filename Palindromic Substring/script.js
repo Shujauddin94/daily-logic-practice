@@ -28,7 +28,7 @@ function countPalindromicSubstrings2(s) {
   let count = 0;
 
   function expand(left, right) {
-    while (left >= 0 && right < s.length && s[left] === s[right]) {
+    while (left >= 0 && right < s.length && s[left] === s[right]) { // Check for palindrome
       count++;
       left--;
       right++;
