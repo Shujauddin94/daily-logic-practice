@@ -8,7 +8,7 @@ function mergeSortedArrays(arr1, arr2) {
             merged.push(arr1[i]); // Add the smaller element to the merged array
             i++;
         } else {
-            merged.push(arr2[j]);
+            merged.push(arr2[j]); // Add the smaller element to the merged array
             j++;
         }
     }
