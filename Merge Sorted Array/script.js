@@ -38,12 +38,12 @@ function mergeSortedArrays2(arr1, arr2) {
 
   // Add remaining elements (if any)
   while (i < arr1.length) {
-    result.push(arr1[i]);
+    result.push(arr1[i]); // Add remaining elements from arr1
     i++;
   }
 
   while (j < arr2.length) {
-    result.push(arr2[j]);
+    result.push(arr2[j]); // Add remaining elements from arr2
     j++;
   }
 
