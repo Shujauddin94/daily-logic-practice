@@ -50,7 +50,7 @@ function findMedianSortedArrays(nums1, nums2) {
     const maxLeftX = partitionX === 0 ? -Infinity : nums1[partitionX - 1]; // If partitionX is 0, it means there are no elements on the left side of nums1, so we use -Infinity to ensure it doesn't affect the max calculation.
     const minRightX = partitionX === x ? Infinity : nums1[partitionX];
 
-    const maxLeftY = partitionY === 0 ? -Infinity : nums2[partitionY - 1];
+    const maxLeftY = partitionY === 0 ? -Infinity : nums2[partitionY - 1];// If partitionY is 0, it means there are no elements on the left side of nums2, so we use -Infinity to ensure it doesn't affect the max calculation.
     const minRightY = partitionY === y ? Infinity : nums2[partitionY];
 
     // Correct partition found
