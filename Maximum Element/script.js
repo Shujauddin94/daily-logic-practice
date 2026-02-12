@@ -4,7 +4,7 @@ function findMax(arr) {
         return null; // Return null for empty array
     }
     let max = arr[0]; // Initialize max with the first element
-    for (let i = 1; i < arr.length; i++) {
+    for (let i = 1; i < arr.length; i++) { // Start loop from the second element
         if (arr[i] > max) { // Corrected comparison operator
             max = arr[i]; // Update max if current element is greater
         }
