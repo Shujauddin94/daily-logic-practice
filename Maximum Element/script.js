@@ -9,7 +9,7 @@ function findMax(arr) {
             max = arr[i]; // Update max if current element is greater
         }
     }
-    return max;
+    return max; // Return the maximum element found
 }
 console.log(findMax([3, 1, 4, 1, 5, 9, 2, 6, 5])); // Output: 9
 console.log(findMax([])); // Output: null
