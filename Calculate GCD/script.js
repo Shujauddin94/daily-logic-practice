@@ -3,7 +3,7 @@ function gcd(a, b) {
     if (b === 0) {
         return a;
     }
-    return gcd(b, a % b);
+    return gcd(b, a % b); // Recursive call with the second number and the remainder of the division of the first number by the second number
 }
 console.log(gcd(12, 18)); // Output: 6
 
