@@ -18,7 +18,7 @@ function fizzBuzz2(n) {
   let result = "";
 
   if (n % 3 === 0) result += "Fizz";
-  if (n % 5 === 0) result += "Buzz";
+  if (n % 5 === 0) result += "Buzz"; // Append "Buzz" to the result if n is a multiple of 5
 
   return result || n.toString(); // Return the result if it's not empty, otherwise return the number as a string
 }
