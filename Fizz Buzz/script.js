@@ -20,6 +20,6 @@ function fizzBuzz2(n) {
   if (n % 3 === 0) result += "Fizz";
   if (n % 5 === 0) result += "Buzz";
 
-  return result || n.toString();
+  return result || n.toString(); // Return the result if it's not empty, otherwise return the number as a string
 }
 console.log(fizzBuzz2(10)); // Output: Buzz
