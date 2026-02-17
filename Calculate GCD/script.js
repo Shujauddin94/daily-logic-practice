@@ -9,7 +9,7 @@ console.log(gcd(12, 18)); // Output: 6
 
 // Another way to do it
 function gcdRecursive(a, b) {
-  if (b === 0) return Math.abs(a);
+  if (b === 0) return Math.abs(a); // If the second number is 0, return the absolute value of the first number as the GCD
   return gcdRecursive(b, a % b); // Recursive call with the second number and the remainder of the division of the first number by the second number
 }
 console.log(gcdRecursive(48, 18)); // Output: 6
