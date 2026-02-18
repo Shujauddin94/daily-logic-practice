@@ -14,6 +14,6 @@ function capitalizeWords2(sentence) {
   return sentence
     .split(" ")
     .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter using map
-    .join(" ");
+    .join(" "); // Join words back into a sentence
 }
 console.log(capitalizeWords2("hello world from javascript")); // Output: "Hello World From Javascript
