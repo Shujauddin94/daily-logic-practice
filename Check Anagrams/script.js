@@ -28,7 +28,7 @@ function areAnagrams2(str1, str2) {
 
   // Split into letters, sort them, and join back
   const sortedStr1 = str1.split("").sort().join(""); // Remove non-alphabetic characters
-  const sortedStr2 = str2.split("").sort().join("");
+  const sortedStr2 = str2.split("").sort().join(""); // Remove non-alphabetic characters
 
   // Compare the sorted strings
   return sortedStr1 === sortedStr2;
