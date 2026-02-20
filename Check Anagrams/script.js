@@ -23,7 +23,7 @@ console.log(areAnagrams("Hello", "World"));   // false
 
 function areAnagrams2(str1, str2) {
   // Convert to lowercase
-  str1 = str1.toLowerCase();
+  str1 = str1.toLowerCase(); // Remove non-alphabetic characters
   str2 = str2.toLowerCase();
 
   // Split into letters, sort them, and join back
