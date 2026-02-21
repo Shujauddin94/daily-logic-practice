@@ -19,7 +19,7 @@ function countVowels(str) {
   let count = 0; // Initialize count to 0
 
   for (const char of str) {  // for...of loop
-    if (vowels.includes(char)) {
+    if (vowels.includes(char)) { // Check if the character is a vowel
       count++; // Increment count if char is a vowel
     }
   }
