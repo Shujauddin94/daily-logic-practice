@@ -15,7 +15,7 @@ console.log(countVowels("Hello World")); // Output: 3
 // Easier method using for off loop.
 
 function countVowels(str) {
-  const vowels = "aeiouAEIOU";
+  const vowels = "aeiouAEIOU"; // String containing all vowels (both lowercase and uppercase)
   let count = 0;
 
   for (const char of str) {  // for...of loop
