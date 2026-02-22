@@ -9,6 +9,6 @@ console.log(countWords("Hello, how are you today?")); // Output: 6
 // Another way to count words using regex
 function countWordsRegex(sentence) {
     const words = sentence.match(/\b\w+\b/g); // Match words using word boundaries
-    return words ? words.length : 0;
+    return words ? words.length : 0; // Return 0 if no words are found
 }
 console.log(countWordsRegex("Hello, how are you today?")); // Output: 6
