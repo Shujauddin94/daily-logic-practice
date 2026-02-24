@@ -16,7 +16,7 @@ console.log(fibonacci(10)); // Output: 55
 // Another way using array to store Fibonacci numbers
 function fibonacciArr(n) {
   if (n < 0) return null;
-  const fib = [0, 1];
+  const fib = [0, 1]; // Initialize the first two Fibonacci numbers
 
   for (let i = 2; i <= n; i++) {
     fib[i] = fib[i - 1] + fib[i - 2]; // Calculate the i-th Fibonacci number and store it in the array
