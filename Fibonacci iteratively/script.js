@@ -4,7 +4,7 @@ function fibonacci(n) {
     if (n === 1) return 1; // Base cases
     let a = 0, b = 1, temp;
     for (let i = 2; i <= n; i++) {
-        temp = a + b;
+        temp = a + b; // Calculate the next Fibonacci number
         a = b;
         b = temp; // Update a and b to the next two Fibonacci numbers
     }
