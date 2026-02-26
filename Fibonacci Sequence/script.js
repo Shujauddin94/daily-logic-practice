@@ -1,6 +1,6 @@
 // Write a function to generate the nth Fibonacci number.
 function fibonacci(n) {
-  if (n === 0) {
+  if (n === 0) { // Base case: F(0) = 0
     return 0;
   }
   if (n === 1) {
