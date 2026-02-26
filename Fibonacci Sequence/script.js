@@ -13,7 +13,7 @@ function fibonacci(n) {
   for (let i = 2; i <= n; i++) {
     let next = a + b;
     a = b;
-    b = next;
+    b = next; // Update a and b to the next two Fibonacci numbers
   }
 
   return b;
