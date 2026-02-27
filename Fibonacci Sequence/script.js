@@ -16,7 +16,7 @@ function fibonacci(n) {
     b = next; // Update a and b to the next two Fibonacci numbers
   }
 
-  return b;
+  return b; // Return the nth Fibonacci number
 }
 console.log(fibonacci(10)); // Output: 55
 
