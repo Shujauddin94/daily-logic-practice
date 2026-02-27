@@ -4,7 +4,7 @@ function fibonacci(n) {
     return 0; // Base case: F(1) = 1
   }
   if (n === 1) {
-    return 1;
+    return 1; // For n > 1, we will calculate the Fibonacci number iteratively
   }
 
   let a = 0;
