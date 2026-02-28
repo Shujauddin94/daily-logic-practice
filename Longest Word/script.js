@@ -21,7 +21,7 @@ function findLongestWord1(sentence) {
     }
   }
 
-  return longest;
+  return longest; // Return the longest word found in the sentence
 }
 
 
