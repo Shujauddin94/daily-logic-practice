@@ -5,7 +5,7 @@ function fizzBuzz(n) {
     } else if (n % 3 === 0) {
         return "Fizz"; // Return "Fizz" if n is a multiple of 3
     } else if (n % 5 === 0) {
-        return "Buzz";
+        return "Buzz"; // Return "Buzz" if n is a multiple of 5
     } else {
         return n.toString();
     }
