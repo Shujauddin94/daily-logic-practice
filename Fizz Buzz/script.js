@@ -3,7 +3,7 @@ function fizzBuzz(n) {
     if (n % 3 === 0 && n % 5 === 0) {
         return "FizzBuzz"; // Return "FizzBuzz" if n is a multiple of both 3 and 5
     } else if (n % 3 === 0) {
-        return "Fizz";
+        return "Fizz"; // Return "Fizz" if n is a multiple of 3
     } else if (n % 5 === 0) {
         return "Buzz";
     } else {
