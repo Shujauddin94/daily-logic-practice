@@ -1,10 +1,10 @@
 // Write a function to find the median of two sorted arrays.
 function findMedianSortedArrays(nums1, nums2) {
     let merged = [];
-    let i = 0, j = 0;
+    let i = 0, j = 0; 
     while (i < nums1.length && j < nums2.length) {
         if (nums1[i] < nums2[j]) {
-            merged.push(nums1[i]);
+            merged.push(nums1[i]); // If the current element of nums1 is smaller than the current element of nums2, we add it to the merged array and move the pointer i to the next element in nums1.
             i++;
         } else {
             merged.push(nums2[j]);
