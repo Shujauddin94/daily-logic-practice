@@ -21,7 +21,7 @@ console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5,
 
 // Another way to do this
 function mergeSortedArrays2(arr1, arr2) {
-  let result = [];
+  let result = []; // Initialize an empty array to hold the merged result
   let i = 0;
   let j = 0;
 
