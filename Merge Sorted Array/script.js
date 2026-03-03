@@ -31,7 +31,7 @@ function mergeSortedArrays2(arr1, arr2) {
       result.push(arr1[i]); // Add the smaller element to the result array
       i++;
     } else {
-      result.push(arr2[j]);
+      result.push(arr2[j]); // Add the smaller element to the result array
       j++;
     }
   }
