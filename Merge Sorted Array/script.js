@@ -28,7 +28,7 @@ function mergeSortedArrays2(arr1, arr2) {
   // Compare elements from both arrays
   while (i < arr1.length && j < arr2.length) {
     if (arr1[i] <= arr2[j]) {
-      result.push(arr1[i]);
+      result.push(arr1[i]); // Add the smaller element to the result array
       i++;
     } else {
       result.push(arr2[j]);
