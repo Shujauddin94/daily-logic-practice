@@ -7,7 +7,7 @@ function findMedianSortedArrays(nums1, nums2) {
             merged.push(nums1[i]); // If the current element of nums1 is smaller than the current element of nums2, we add it to the merged array and move the pointer i to the next element in nums1.
             i++;
         } else {
-            merged.push(nums2[j]);
+            merged.push(nums2[j]); // If the current element of nums2 is smaller than or equal to the current element of nums1, we add it to the merged array and move the pointer j to the next element in nums2.
             j++;
         }
     }
