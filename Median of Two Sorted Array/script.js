@@ -16,7 +16,7 @@ function findMedianSortedArrays(nums1, nums2) {
         i++;
     }
     while (j < nums2.length) {
-        merged.push(nums2[j]);
+        merged.push(nums2[j]); // If there are remaining elements in nums2 after one of the arrays has been fully traversed, we add them to the merged array.
         j++;
     }
     let len = merged.length;
