@@ -2,7 +2,7 @@
 function countCharacterOccurrences(str) {
     const charCount = {};
     for (let char of str) {
-        charCount[char] = (charCount[char] || 0) + 1;
+        charCount[char] = (charCount[char] || 0) + 1;// Update the count for each character in the object
     }
     return charCount;
 }
