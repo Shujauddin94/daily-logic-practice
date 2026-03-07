@@ -4,7 +4,7 @@ function countCharacterOccurrences(str) {
     for (let char of str) {
         charCount[char] = (charCount[char] || 0) + 1;// Update the count for each character in the object
     }
-    return charCount;
+    return charCount; // Return the object containing character counts
 }
 console.log(countCharacterOccurrences("hello world")); //{ h: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1 }
 
