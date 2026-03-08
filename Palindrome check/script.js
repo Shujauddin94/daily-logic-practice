@@ -1,6 +1,6 @@
 // Write a function to check if a given string is a palindrome
 function isPalindrome(str) {
-  const reversed = str.split('').reverse().join('');
+  const reversed = str.split('').reverse().join(''); // reverse the string
   return str === reversed; // true if palindrome, false otherwise
 }
 
