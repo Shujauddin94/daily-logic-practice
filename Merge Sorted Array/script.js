@@ -6,7 +6,7 @@ function mergeSortedArrays(arr1, arr2) {
     while (i < arr1.length && j < arr2.length) {
         if (arr1[i] < arr2[j]) {
             merged.push(arr1[i]); // Add the smaller element to the merged array
-            i++;
+            i++; // Move the pointer for arr1
         } else {
             merged.push(arr2[j]); // Add the smaller element to the merged array
             j++;
