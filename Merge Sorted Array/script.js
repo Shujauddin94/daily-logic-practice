@@ -47,6 +47,6 @@ function mergeSortedArrays2(arr1, arr2) {
     j++;
   }
 
-  return result;
+  return result; // Return the merged sorted array
 }
 console.log(mergeSortedArrays2([1, 2, 4], [1, 3, 4])); // Output: [1, 1, 2, 3, 4, 4]
