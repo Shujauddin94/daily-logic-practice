@@ -7,7 +7,7 @@ function countPalindromicSubstrings(s) {
     function expandAroundCenter(left, right) {
         while (left >= 0 && right < n && s[left] === s[right]) {
             count++;
-            left--;
+            left--; // Move left pointer to the left
             right++;
         }
     }
