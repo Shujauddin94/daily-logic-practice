@@ -6,7 +6,7 @@ function countPalindromicSubstrings(s) {
     // Helper function to expand around center
     function expandAroundCenter(left, right) {
         while (left >= 0 && right < n && s[left] === s[right]) {
-            count++;
+            count++; // Found a palindrome, increment count
             left--; // Move left pointer to the left
             right++;
         }
