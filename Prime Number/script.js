@@ -5,7 +5,7 @@ function isPrime(num) {
     if (num % 2 === 0 || num % 3 === 0) return false;
     for (let i = 5; i * i <= num; i += 6) {
         if (num % i === 0 || num % (i + 2) === 0) {
-            return false;
+            return false; // divisible by i or i+2 → not prime
         }
     }
     return true; // if no divisors found, it's prime
