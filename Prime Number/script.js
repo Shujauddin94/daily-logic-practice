@@ -8,7 +8,7 @@ function isPrime(num) {
             return false;
         }
     }
-    return true;
+    return true; // if no divisors found, it's prime
 }   
 console.log(isPrime(11)); // true
 console.log(isPrime(15)); // false
