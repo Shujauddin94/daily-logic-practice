@@ -14,6 +14,6 @@ function reverseInteger(num) {
     .reverse()
     .join('');
 
-  return Math.sign(num) * Number(reversed);
+  return Math.sign(num) * Number(reversed); // Preserve the sign of the original number
 }
 console.log(reverseInteger(-6789)); // Output: -9876
