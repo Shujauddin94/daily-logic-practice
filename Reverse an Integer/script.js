@@ -11,7 +11,7 @@ function reverseInteger(num) {
   const reversed = Math.abs(num) // Get absolute value
     .toString() //  Convert to string
     .split('') // Split into array of characters
-    .reverse()
+    .reverse() // Reverse the array
     .join('');
 
   return Math.sign(num) * Number(reversed); // Preserve the sign of the original number
