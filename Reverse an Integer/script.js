@@ -10,7 +10,7 @@ console.log(reverseInteger(12345)); // Output: 54321
 function reverseInteger(num) {
   const reversed = Math.abs(num) // Get absolute value
     .toString() //  Convert to string
-    .split('')
+    .split('') // Split into array of characters
     .reverse()
     .join('');
 
