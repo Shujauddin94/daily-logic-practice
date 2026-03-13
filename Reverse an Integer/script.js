@@ -12,7 +12,7 @@ function reverseInteger(num) {
     .toString() //  Convert to string
     .split('') // Split into array of characters
     .reverse() // Reverse the array
-    .join('');
+    .join(''); // Join back into a string
 
   return Math.sign(num) * Number(reversed); // Preserve the sign of the original number
 }
