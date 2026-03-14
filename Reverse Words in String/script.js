@@ -10,7 +10,7 @@ function reverseWords(sentence) {
   let result = [];
 
   for (let i = words.length - 1; i >= 0; i--) {
-    result.push(words[i]);
+    result.push(words[i]); // Add words in reverse order
   }
 
   return result.join(" "); // Join the reversed words with a single space
