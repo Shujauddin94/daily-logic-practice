@@ -7,7 +7,7 @@ console.log(reverseWords("Hello World from OpenAI")); // Output: "OpenAI from Wo
 // This time its complex one with function and loop.
 function reverseWords(sentence) {
   const words = sentence.trim().split(/\s+/); // Split by one or more spaces
-  let result = [];
+  let result = []; // Initialize an empty array to hold the reversed words
 
   for (let i = words.length - 1; i >= 0; i--) {
     result.push(words[i]); // Add words in reverse order
