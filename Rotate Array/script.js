@@ -13,7 +13,7 @@ function rotateRight(arr, k) {
   k = k % n;
 
   for (let i = 0; i < k; i++) {
-    arr.unshift(arr.pop());
+    arr.unshift(arr.pop());// Remove the last element and add it to the front of the array
   }
 
   return arr;// Return the rotated array
