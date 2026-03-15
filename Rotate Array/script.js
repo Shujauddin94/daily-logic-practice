@@ -16,6 +16,6 @@ function rotateRight(arr, k) {
     arr.unshift(arr.pop());
   }
 
-  return arr;
+  return arr;// Return the rotated array
 }
 console.log(rotateRight([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
