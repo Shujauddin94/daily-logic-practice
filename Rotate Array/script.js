@@ -8,7 +8,7 @@ console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
 
 // Easier method
 
-function rotateRight(arr, k) {
+function rotateRight(arr, k) { // Function to rotate an array to the right by k steps
   const n = arr.length; // Get the length of the array
   k = k % n; // Handle cases where k is greater than the array length
 
