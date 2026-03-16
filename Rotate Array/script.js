@@ -9,10 +9,10 @@ console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
 // Easier method
 
 function rotateRight(arr, k) {
-  const n = arr.length;
+  const n = arr.length; // Get the length of the array
   k = k % n; // Handle cases where k is greater than the array length
 
-  for (let i = 0; i < k; i++) {
+  for (let i = 0; i < k; i++) { 
     arr.unshift(arr.pop());// Remove the last element and add it to the front of the array
   }
 
