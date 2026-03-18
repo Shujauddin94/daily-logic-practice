@@ -19,7 +19,7 @@ function subarraySumAlternative(nums, k) {
     const prefixSumCount = new Map();
     prefixSumCount.set(0, 1); // Initialize the map with a prefix sum of 0 occurring once to handle cases where a subarray itself sums to k
     let currentSum = 0; // This variable will keep track of the current prefix sum as we iterate through the array
-    let totalCount = 0; // This variable will count the total number of subarrays that sum to k
+    let totalCount = 0; 
     for (let num of nums) {
         currentSum += num;
         if (prefixSumCount.has(currentSum - k)) {
