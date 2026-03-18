@@ -17,7 +17,7 @@ console.log(subarraySum([1, 1, 1], 2)); // Output: 2
 // Another way to solve the problem using prefix sums and a hash map
 function subarraySumAlternative(nums, k) {
     const prefixSumCount = new Map();
-    prefixSumCount.set(0, 1);
+    prefixSumCount.set(0, 1); // Initialize the map with a prefix sum of 0 occurring once to handle cases where a subarray itself sums to k
     let currentSum = 0;
     let totalCount = 0;
     for (let num of nums) {
