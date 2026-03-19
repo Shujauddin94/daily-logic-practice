@@ -21,7 +21,7 @@ function subarraySumAlternative(nums, k) {
     let currentSum = 0; // This variable will keep track of the current prefix sum as we iterate through the array
     let totalCount = 0; 
     for (let num of nums) {
-        currentSum += num;
+        currentSum += num; // Update the current prefix sum by adding the current number
         if (prefixSumCount.has(currentSum - k)) {
             totalCount += prefixSumCount.get(currentSum - k); // If the current prefix sum minus k exists in the map, it means there are subarrays that sum to k, so we add their count to the total
         }
