@@ -15,7 +15,7 @@ console.log(twoSum([2, 7, 11, 15], 9)); // Output: [0, 1]
 // Easier method (less efficient)
 function twoSumSlow(nums, target) {
   for (let i = 0; i < nums.length; i++) { // Loop through each number
-    for (let j = i + 1; j < nums.length; j++) {
+    for (let j = i + 1; j < nums.length; j++) { // Loop through the numbers after the current number
       if (nums[i] + nums[j] === target) {
         return [i, j];
       }
