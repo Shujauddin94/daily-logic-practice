@@ -8,7 +8,7 @@ function twoSum(numbers, target) {
         }
         numMap.set(numbers[i], i); // Store number and its index
     }
-    return null;
+    return null; // Return null if no solution is found
 }
 console.log(twoSum([2, 7, 11, 15], 9)); // Output: [0, 1]
 
