@@ -13,4 +13,4 @@ function isValidEmail2(email) {
   return regex.test(email); // This regex checks for a more specific pattern of email addresses
 }
 console.log(isValidEmail2("test@example.com"));// true
-console.log(isValidEmail2("invalid-email"));// false
+console.log(isValidEmail2("invalid-email"));// it will return false because it does not match the pattern of a valid email address
