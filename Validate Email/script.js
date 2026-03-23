@@ -8,7 +8,7 @@ console.log(isValidEmail("test@example.com"));// true
 console.log(isValidEmail("invalid-email"));// false
 
 // Another way to validate email addresses
-function isValidEmail2(email) {
+function isValidEmail2(email) { // This regex checks for a more specific pattern of email addresses
   const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // This regex checks for a more specific pattern of email addresses
   return regex.test(email); // This regex checks for a more specific pattern of email addresses
 }
