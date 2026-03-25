@@ -6,6 +6,6 @@ console.log(calculatePower(2, 3)); // Output: 8
 
 // Another way to do it using exponentiation operator.
 function calculatePower2(base, exponent) {
-    return base ** exponent; 
+    return base ** exponent;   // Using exponentiation operator to calculate power
 }
 console.log(calculatePower2(2, 3)); // Output: 8
