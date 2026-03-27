@@ -2,7 +2,7 @@
 function areAnagrams(str1, str2) {
     // Remove non-alphabetic characters and convert to lowercase
     const cleanStr1 = str1.replace(/[^a-zA-Z]/g, '').toLowerCase(); // Remove non-alphabetic characters
-    const cleanStr2 = str2.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    const cleanStr2 = str2.replace(/[^a-zA-Z]/g, '').toLowerCase(); // Remove non-alphabetic characters
 
     // If lengths are different, they can't be anagrams
     if (cleanStr1.length !== cleanStr2.length) {
