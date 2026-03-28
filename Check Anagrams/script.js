@@ -21,7 +21,7 @@ console.log(areAnagrams("Hello", "World"));   // false
 // This is the method that i understand better
 
 
-function areAnagrams2(str1, str2) {
+function areAnagrams2(str1, str2) { // Remove non-alphabetic characters
   // Convert to lowercase
   str1 = str1.toLowerCase(); // Remove non-alphabetic characters
   str2 = str2.toLowerCase(); // Remove non-alphabetic characters
