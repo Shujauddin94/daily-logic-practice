@@ -6,7 +6,7 @@ function areAnagrams(str1, str2) {
 
     // If lengths are different, they can't be anagrams
     if (cleanStr1.length !== cleanStr2.length) {
-        return false;
+        return false; // Not anagrams
     }
 
     // Sort characters and compare
