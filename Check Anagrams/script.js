@@ -5,7 +5,7 @@ function areAnagrams(str1, str2) {
     const cleanStr2 = str2.replace(/[^a-zA-Z]/g, '').toLowerCase(); // Remove non-alphabetic characters
 
     // If lengths are different, they can't be anagrams
-    if (cleanStr1.length !== cleanStr2.length) {
+    if (cleanStr1.length !== cleanStr2.length) { // Remove non-alphabetic characters
         return false; // Not anagrams
     }
 
