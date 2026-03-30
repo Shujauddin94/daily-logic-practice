@@ -1,5 +1,5 @@
 // Write a function to check if two strings are anagrams of each other.
-function areAnagrams(str1, str2) {
+function areAnagrams(str1, str2) { // Remove non-alphabetic characters
     // Remove non-alphabetic characters and convert to lowercase
     const cleanStr1 = str1.replace(/[^a-zA-Z]/g, '').toLowerCase(); // Remove non-alphabetic characters
     const cleanStr2 = str2.replace(/[^a-zA-Z]/g, '').toLowerCase(); // Remove non-alphabetic characters
