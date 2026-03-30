@@ -31,7 +31,7 @@ function areAnagrams2(str1, str2) { // Remove non-alphabetic characters
   const sortedStr2 = str2.split("").sort().join(""); // Remove non-alphabetic characters
 
   // Compare the sorted strings
-  return sortedStr1 === sortedStr2;
+  return sortedStr1 === sortedStr2; // Remove non-alphabetic characters
 }
 console.log(areAnagrams2("Triangle", "Integral")); // true
 console.log(areAnagrams2("Apple", "Pabble"));     // false
