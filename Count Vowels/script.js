@@ -1,7 +1,7 @@
 // Write a function that counts the number of vowels in a given string. 
 function countVowels(str) {
     const vowels = 'aeiouAEIOU';
-    let count = 0;
+    let count = 0; // Initialize count to 0
     for (let i = 0; i < str.length; i++) {
         if (vowels.includes(str[i])) { // Check if the character is a vowel
             count++; // Increment count if char is a vowel
