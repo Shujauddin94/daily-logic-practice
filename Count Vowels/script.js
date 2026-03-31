@@ -1,5 +1,5 @@
 // Write a function that counts the number of vowels in a given string. 
-function countVowels(str) {
+function countVowels(str) { //  Function definition that takes a string as an argument
     const vowels = 'aeiouAEIOU'; // String containing all vowels (both lowercase and uppercase)
     let count = 0; // Initialize count to 0
     for (let i = 0; i < str.length; i++) {
