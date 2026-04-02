@@ -3,7 +3,7 @@ function factorial(n) {
     if (n === 0) {
         return 1;
     }
-    return n * factorial(n - 1); // Recursive call
+    return n * factorial(n - 1); // Recursive call to calculate factorial of n-1
 }
 
 console.log(factorial(5)); // Output: 120   
