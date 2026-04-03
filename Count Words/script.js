@@ -1,7 +1,7 @@
 // Write a function that counts the number of words in a sentence.
 function countWords(sentence) {
     // Split the sentence by spaces and filter out any empty strings
-    const words = sentence.trim().split(/\s+/).filter(word => word.length > 0);
+    const words = sentence.trim().split(/\s+/).filter(word => word.length > 0); // Use regex to split by any amount of whitespace and filter out empty strings
     return words.length; // Return the number of words
 }
 console.log(countWords("Hello, how are you today?")); // Output: 6
