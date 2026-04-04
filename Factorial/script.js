@@ -32,4 +32,4 @@ function factorialloop(n) {
     return result;
 }
 console.log(factorialloop(8)); // Output: 40320
-console.log(factorialloop(-3)); // Output: Factorial is not defined for negative numbers
+console.log(factorialloop(-3)); 
