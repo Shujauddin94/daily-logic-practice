@@ -25,7 +25,7 @@ function factorialloop(n) {
     for (let i = 1; i <= n; i++) {
         // Step 4: Multiply result by the current number
         // It will keep happening until we reach n best and easiest way to understand
-        result = result * i;
+        result = result * i; // This is the same as result *= i; which is a shorthand for multiplying result by i and storing it back in result
     }
 
     // Step 5: Return the final result
