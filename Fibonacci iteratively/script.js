@@ -18,7 +18,7 @@ function fibonacciArr(n) {
   if (n < 0) return null;
   const fib = [0, 1]; // Initialize the first two Fibonacci numbers
 
-  for (let i = 2; i <= n; i++) {
+  for (let i = 2; i <= n; i++) { // Start from the 2nd index and calculate Fibonacci numbers up to n
     fib[i] = fib[i - 1] + fib[i - 2]; // Calculate the i-th Fibonacci number and store it in the array
   }
 
