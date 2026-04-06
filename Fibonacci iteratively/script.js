@@ -22,7 +22,7 @@ function fibonacciArr(n) {
     fib[i] = fib[i - 1] + fib[i - 2]; // Calculate the i-th Fibonacci number and store it in the array
   }
 
-  return fib[n]; 
+  return fib[n]; // Return the n-th Fibonacci number from the array
 }
 console.log(fibonacciArr(6)); // Output: 8
 console.log(fibonacciArr(10)); // Output: 55
