@@ -24,5 +24,5 @@ function fibonacciArr(n) {
 
   return fib[n]; // Return the n-th Fibonacci number from the array
 }
-console.log(fibonacciArr(6)); // Output: 8
+console.log(fibonacciArr(6)); // Output: 8.
 console.log(fibonacciArr(10)); // Output: 55
