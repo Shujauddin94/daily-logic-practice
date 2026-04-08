@@ -2,7 +2,7 @@
 function fibonacci(n) {
     if (n <= 0) return 0; // Handle non-positive input
     if (n === 1) return 1; // Base cases
-    let a = 0, b = 1, temp;
+    let a = 0, b = 1, temp; // Initialize the first two Fibonacci numbers and a temporary variable for calculation
     for (let i = 2; i <= n; i++) {
         temp = a + b; // Calculate the next Fibonacci number
         a = b; // Update a to the previous Fibonacci number
