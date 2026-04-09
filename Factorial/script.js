@@ -22,7 +22,7 @@ function factorialloop(n) {
     let result = 1;
 
     // Step 3: Loop from 1 up to n
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) { // This loop will run from 1 to n, and in each iteration, it will multiply the current result by the loop variable i
         // Step 4: Multiply result by the current number
         // It will keep happening until we reach n best and easiest way to understand
         result = result * i; // This is the same as result *= i; which is a shorthand for multiplying result by i and storing it back in result
