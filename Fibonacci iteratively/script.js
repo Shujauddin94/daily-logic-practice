@@ -8,7 +8,7 @@ function fibonacci(n) {
         a = b; // Update a to the previous Fibonacci number
         b = temp; // Update a and b to the next two Fibonacci numbers
     }
-    return b; 
+    return b;  // Return the n-th Fibonacci number, which is now stored in b
 }
 console.log(fibonacci(6)); // Output: 8
 console.log(fibonacci(10)); // Output: 55
