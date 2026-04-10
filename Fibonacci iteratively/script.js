@@ -6,7 +6,7 @@ function fibonacci(n) {
     for (let i = 2; i <= n; i++) { // Start from the 2nd index and calculate Fibonacci numbers up to n
         temp = a + b; // Calculate the next Fibonacci number
         a = b; // Update a to the previous Fibonacci number
-        b = temp; // Update a and b to the next two Fibonacci numbers
+        b = temp; 
     }
     return b;  // Return the n-th Fibonacci number, which is now stored in b
 }
