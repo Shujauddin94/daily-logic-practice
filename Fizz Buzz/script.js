@@ -10,7 +10,7 @@ function fizzBuzz(n) {
         return n.toString();
     }
 }
-console.log(fizzBuzz(15)); // Output: FizzBuzz
+console.log(fizzBuzz(15)); 
 
 // Another shorter way
 
