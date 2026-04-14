@@ -6,7 +6,7 @@ function intersection(arr1, arr2) {
 console.log(intersection([1, 2, 3], [2, 3, 4])); // Output: [2, 3]
 
 // Another way using filter and includes
-function intersectionUsingIncludes(arr1, arr2) {
+function intersectionUsingIncludes(arr1, arr2) { // This function finds the intersection of two arrays using filter and includes
     return arr1.filter(item => arr2.includes(item)); // Return elements present in both arrays
 }
 console.log(intersectionUsingIncludes([1, 2, 3], [2, 3, 4])); // Output: [2, 3]
