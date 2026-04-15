@@ -26,4 +26,3 @@ function findLongestWord1(sentence) {
 
 
 console.log(findLongestWord1("He jumped over the fence"));
-// "jumped"
