@@ -25,4 +25,4 @@ function findLongestWord1(sentence) {
 }
 
 
-console.log(findLongestWord1("He jumped over the fence"));
+console.log(findLongestWord1("He jumped over the fence")); // Output: "jumped"
