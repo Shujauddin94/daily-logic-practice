@@ -8,7 +8,7 @@ function fibonacci(n) {
   }
 
   let a = 0;
-  let b = 1;
+  let b = 1; // Initialize the first two Fibonacci numbers
 
   for (let i = 2; i <= n; i++) {
     let next = a + b; // Calculate the next Fibonacci number
