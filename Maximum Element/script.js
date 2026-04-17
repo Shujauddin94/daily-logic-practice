@@ -19,4 +19,4 @@ function findMax2(arr) {
   return Math.max(...arr); // Spread the array elements as individual arguments to Math.max
 }
 
-console.log(findMax2([3, 7, 2, 9, 5])); // 9
+console.log(findMax2([3, 7, 2, 9, 5])); 
