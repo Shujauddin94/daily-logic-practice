@@ -1,5 +1,5 @@
 // Write a function to find the maximum element in an array.
-function findMax(arr) {
+function findMax(arr) { // Function to find the maximum element in an array
     if (arr.length === 0) {
         return null; // Return null for empty array
     }
