@@ -1,6 +1,6 @@
 // Write a function to find the maximum element in an array.
 function findMax(arr) { // Function to find the maximum element in an array
-    if (arr.length === 0) {
+    if (arr.length === 0) { // Check if the array is empty
         return null; // Return null for empty array
     }
     let max = arr[0]; // Initialize max with the first element
