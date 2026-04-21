@@ -1,7 +1,7 @@
 // Write a function to merge two sorted arrays into a single sorted array.
 function mergeSortedArrays(arr1, arr2) {
     let merged = [];
-    let i = 0, j = 0;
+    let i = 0, j = 0; // Initialize pointers for both arrays
 
     while (i < arr1.length && j < arr2.length) {
         if (arr1[i] < arr2[j]) {
