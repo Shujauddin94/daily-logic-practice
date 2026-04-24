@@ -13,7 +13,7 @@ function findMedianSortedArrays(nums1, nums2) {
     }
     while (i < nums1.length) {
         merged.push(nums1[i]); 
-        i++;
+        i++; // If there are remaining elements in nums1 after one of the arrays has been fully traversed, we add them to the merged array.
     }
     while (j < nums2.length) {
         merged.push(nums2[j]); // If there are remaining elements in nums2 after one of the arrays has been fully traversed, we add them to the merged array.
