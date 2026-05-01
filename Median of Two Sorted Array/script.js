@@ -40,7 +40,7 @@ function findMedianSortedArrays(nums1, nums2) {
   const x = nums1.length;
   const y = nums2.length;
 
-  let low = 0; // We initialize low to 0 and high to the length of nums1, which represents the range of possible partition indices for nums1. We will use binary search to find the correct partition index for nums1.
+  let low = 0; 
   let high = x; // We initialize low to 0 and high to the length of nums1, which represents the range of possible partition indices for nums1. We will use binary search to find the correct partition index for nums1.
 
   while (low <= high) {
