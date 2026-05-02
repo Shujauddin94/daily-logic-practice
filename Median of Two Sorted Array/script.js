@@ -38,7 +38,7 @@ function findMedianSortedArrays(nums1, nums2) {
   }
 
   const x = nums1.length;
-  const y = nums2.length; // We store the lengths of nums1 and nums2 in variables x and y, respectively. This allows us to easily reference the lengths of the arrays throughout the function.
+  const y = nums2.length; 
 
   let low = 0; // We initialize low to 0, which represents the starting index of the partition for nums1. This means that initially, we are considering the possibility of having all elements of nums1 in the right half and none in the left half.
   let high = x; // We initialize low to 0 and high to the length of nums1, which represents the range of possible partition indices for nums1. We will use binary search to find the correct partition index for nums1.
