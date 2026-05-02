@@ -37,7 +37,7 @@ function findMedianSortedArrays(nums1, nums2) {
     return findMedianSortedArrays(nums2, nums1);
   }
 
-  const x = nums1.length;
+  const x = nums1.length; // We store the lengths of nums1 and nums2 in variables x and y, respectively. This allows us to easily reference the lengths of the arrays throughout the function.
   const y = nums2.length; // We store the lengths of nums1 and nums2 in variables x and y, respectively. This allows us to easily reference the lengths of the arrays throughout the function.
 
   let low = 0; // We initialize low to 0, which represents the starting index of the partition for nums1. This means that initially, we are considering the possibility of having all elements of nums1 in the right half and none in the left half.
