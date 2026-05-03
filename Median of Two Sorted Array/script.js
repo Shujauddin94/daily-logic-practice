@@ -34,7 +34,7 @@ console.log(findMedianSortedArrays([1, 2], [3, 4])); // Output: 2.5
 function findMedianSortedArrays(nums1, nums2) {
   // Ensure nums1 is the smaller array
   if (nums1.length > nums2.length) {
-    return findMedianSortedArrays(nums2, nums1);
+    return findMedianSortedArrays(nums2, nums1); // We check if nums1 is larger than nums2. If it is, we call the function recursively with the arguments swapped. This ensures that nums1 is always the smaller array, which simplifies the logic for finding the median.
   }
 
   const x = nums1.length; // We store the lengths of nums1 and nums2 in variables x and y, respectively. This allows us to easily reference the lengths of the arrays throughout the function.
