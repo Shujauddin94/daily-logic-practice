@@ -19,7 +19,7 @@ function findMedianSortedArrays(nums1, nums2) {
         merged.push(nums2[j]); // If there are remaining elements in nums2 after one of the arrays has been fully traversed, we add them to the merged array.
         j++;
     }
-    let len = merged.length; // We calculate the total length of the merged array to determine how to find the median.
+    let len = merged.length; 
     if (len % 2 === 0) {
         return (merged[len / 2 - 1] + merged[len / 2]) / 2; // If the total length of the merged array is even, the median is the average of the two middle elements. We access these elements using their indices, which are len / 2 - 1 and len / 2.
     } else {
