@@ -59,7 +59,7 @@ function findMedianSortedArrays(nums1, nums2) {
         return (
           Math.max(maxLeftX, maxLeftY) + 
           Math.min(minRightX, minRightY) // We calculate the median by taking the average of the maximum of the left halves and the minimum of the right halves. We use Math.max to find the maximum of the left halves and Math.min to find the minimum of the right halves. Finally, we divide the sum by 2 to get the average, which is the median when the total length is even.
-        ) / 2;   
+        ) / 2;   // We calculate the median by taking the average of the maximum of the left halves and the minimum of the right halves. We use Math.max to find the maximum of the left halves and Math.min to find the minimum of the right halves. Finally, we divide the sum by 2 to get the average, which is the median when the total length is even.
       } else {
         return Math.max(maxLeftX, maxLeftY); // If the total length of the combined arrays is odd, the median is simply the maximum of the left halves, since there will be one more element in the left half than in the right half. We use Math.max to find the maximum of the left halves and return it as the median.
       }
