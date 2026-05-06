@@ -70,7 +70,7 @@ function findMedianSortedArrays(nums1, nums2) {
     }
     // Move right
     else {
-      low = partitionX + 1; // If the maximum of the left half of nums1 is less than or equal to the minimum of the right half of nums2, but the maximum of the left half of nums2 is greater than the minimum of the right half of nums1, it means we need to move the partition in nums1 to the right, so we update low to partitionX + 1.
+      low = partitionX + 1; 
     }
   }
 }
