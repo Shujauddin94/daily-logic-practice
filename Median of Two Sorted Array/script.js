@@ -54,7 +54,7 @@ function findMedianSortedArrays(nums1, nums2) {
     const minRightY = partitionY === y ? Infinity : nums2[partitionY]; // If partitionY is equal to y, it means there are no elements on the right side of nums2, so we use Infinity to ensure it doesn't affect the min calculation.
 
     // Correct partition found
-    if (maxLeftX <= minRightY && maxLeftY <= minRightX) { // If the maximum of the left half of nums1 is less than or equal to the minimum of the right half of nums2, and the maximum of the left half of nums2 is less than or equal to the minimum of the right half of nums1, it means we have found the correct partition.
+    if (maxLeftX <= minRightY && maxLeftY <= minRightX) { 
       if ((x + y) % 2 === 0) {
         return (
           Math.max(maxLeftX, maxLeftY) + 
