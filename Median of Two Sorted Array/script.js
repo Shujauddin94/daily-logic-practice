@@ -1,6 +1,6 @@
 // Write a function to find the median of two sorted arrays.
 function findMedianSortedArrays(nums1, nums2) {
-    let merged = [];
+    let merged = []; // We create an empty array called merged to store the merged elements from both nums1 and nums2. This array will be used to combine the two sorted arrays into a single sorted array, which will allow us to easily find the median.
     let i = 0, j = 0; // We initialize two pointers, i and j, to keep track of our current position in nums1 and nums2, respectively. We also initialize an empty array called merged to store the merged elements from both arrays.
     while (i < nums1.length && j < nums2.length) {
         if (nums1[i] < nums2[j]) {
