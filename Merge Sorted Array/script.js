@@ -4,7 +4,7 @@ function mergeSortedArrays(arr1, arr2) {
     let i = 0, j = 0; // Initialize pointers for both arrays
 
     while (i < arr1.length && j < arr2.length) {
-        if (arr1[i] < arr2[j]) {
+        if (arr1[i] < arr2[j]) { // Compare elements from both arrays
             merged.push(arr1[i]); // Add the smaller element to the merged array
             i++; // Move the pointer for arr1
         } else {
