@@ -4,7 +4,7 @@ function findMissingNumber(arr, n) {
     const actualSum = arr.reduce((acc, num) => acc + num, 0); // Calculate the sum of the elements in the array
     return expectedSum - actualSum; // The missing number is the difference between the expected sum and the actual sum
 }
-console.log(findMissingNumber([1, 2, 4, 5, 6], 6)); // Output: 3
+console.log(findMissingNumber([1, 2, 4, 5, 6], 6)); 
 
 // Easier method
 
