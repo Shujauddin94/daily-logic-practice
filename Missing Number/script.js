@@ -10,7 +10,7 @@ console.log(findMissingNumber([1, 2, 4, 5, 6], 6)); // Output: 3
 
 function findMissingNumber2(arr, n) {
     // Step 1: Calculate the expected sum from 1 to n
-    let expectedSum = n * (n + 1) / 2;
+    let expectedSum = n * (n + 1) / 2; // The formula for the sum of the first n natural numbers is n(n + 1) / 2
 
     // Step 2: Calculate the actual sum of the array
     let actualSum = 0; // Initialize actual sum to 0
