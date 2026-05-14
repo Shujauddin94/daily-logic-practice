@@ -11,7 +11,7 @@ console.log(countCharacterOccurrences("hello world")); //{ h: 1, e: 1, l: 3, o: 
 // Another approach using Map
 function countCharacterOccurrencesMap(str) {
     const charCountMap = new Map(); // Create a new Map to store character counts
-    for (let char of str) {
+    for (let char of str) { // Iterate through each character in the string
         charCountMap.set(char, (charCountMap.get(char) || 0) + 1); // Update the count for each character in the Map
     }
     return charCountMap;// Return the Map containing character counts
