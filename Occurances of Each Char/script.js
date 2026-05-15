@@ -16,4 +16,4 @@ function countCharacterOccurrencesMap(str) {
     }
     return charCountMap;// Return the Map containing character counts
 }
-console.log(countCharacterOccurrencesMap("hello world")); //Map(8) { 'h' => 1, 'e' => 1, 'l' => 3, 'o' => 2, ' ' => 1, 'w' => 1, 'r' => 1, 'd' => 1 }
+console.log(countCharacterOccurrencesMap("hello world"));
