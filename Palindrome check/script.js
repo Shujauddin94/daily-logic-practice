@@ -12,6 +12,6 @@ console.log(isPalindrome("hello"));   // false
 
 
 function isPalindrome2(str) {
-  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, ''); // remove non-alphanumeric characters and convert to lowercase
   return cleaned === cleaned.split('').reverse().join(''); // true if palindrome, false otherwise
 }
