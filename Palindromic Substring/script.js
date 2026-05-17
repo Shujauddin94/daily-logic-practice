@@ -44,5 +44,5 @@ function countPalindromicSubstrings2(s) {
 
   return count;
 }
-console.log(countPalindromicSubstrings2("abba")); // Output: 6
+console.log(countPalindromicSubstrings2("abba")); 
 console.log(countPalindromicSubstrings2("level"));  // Output: 7
