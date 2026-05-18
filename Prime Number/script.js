@@ -20,7 +20,7 @@ function isPrime2(n) {
 
   for (let i = 2; i < n; i++) { // check all numbers from 2 to n-1
     if (n % i === 0) {
-      return false; 
+      return false; // n is divisible by i → not prime
     }
   }
 
