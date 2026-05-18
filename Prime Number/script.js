@@ -15,7 +15,7 @@ console.log(isPrime(15)); // false
 
 // Easier way
 
-function isPrime2(n) {
+function isPrime2(n) { // Check if n is prime
   if (n < 2) return false; // 0 and 1 are not prime
 
   for (let i = 2; i < n; i++) { // check all numbers from 2 to n-1
