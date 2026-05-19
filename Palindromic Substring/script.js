@@ -45,4 +45,4 @@ function countPalindromicSubstrings2(s) {
   return count; // Return the total count of palindromic substrings
 }
 console.log(countPalindromicSubstrings2("abba")); // Output: 6
-console.log(countPalindromicSubstrings2("level"));  
+console.log(countPalindromicSubstrings2("level"));  // Output: 7
