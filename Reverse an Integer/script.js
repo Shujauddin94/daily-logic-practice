@@ -7,7 +7,7 @@ function reverseInteger(num) {
 console.log(reverseInteger(12345)); // Output: 54321
 
 // Another way 
-function reverseInteger(num) {
+function reverseInteger(num) { // Handle negative numbers by preserving the sign
   const reversed = Math.abs(num) // Get absolute value
     .toString() //  Convert to string
     .split('') // Split into array of characters
