@@ -9,7 +9,7 @@ function reverseWords(sentence) {
   const words = sentence.trim().split(/\s+/); // Split by one or more spaces
   let result = []; // Initialize an empty array to hold the reversed words
 
-  for (let i = words.length - 1; i >= 0; i--) {
+  for (let i = words.length - 1; i >= 0; i--) { // Loop through the words array in reverse order
     result.push(words[i]); // Add words in reverse order
   }
 
