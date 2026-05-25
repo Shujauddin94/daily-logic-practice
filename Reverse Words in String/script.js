@@ -13,7 +13,7 @@ function reverseWords(sentence) {
     result.push(words[i]); // Add words in reverse order
   }
 
-  return result.join(" "); // Join the reversed words with a single space
+  return result.join(" "); 
 }
 
 
