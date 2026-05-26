@@ -1,6 +1,6 @@
 // Write a function that reverses the order of words in a sentence.
 function reverseWords(sentence) {
-    return sentence.split(' ').reverse().join(' ');
+    return sentence.split(' ').reverse().join(' '); // Split the sentence into words, reverse the array of words, and join them back into a string
 }
 console.log(reverseWords("Hello World from OpenAI")); // Output: "OpenAI from World Hello"
 
