@@ -1,5 +1,5 @@
 // Write a function to rotate elements in an array to the right by a given number of steps.
-function rotateArray(arr, steps) {
+function rotateArray(arr, steps) { // Function to rotate an array to the right by a specified number of steps
     const len = arr.length; // Get the length of the array
     steps = steps % len; // Handle cases where steps > len
     return arr.slice(-steps).concat(arr.slice(0, len - steps)); // Rotate the array
