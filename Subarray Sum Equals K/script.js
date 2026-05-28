@@ -10,7 +10,7 @@ function subarraySum(nums, k) {
         }
         sumFrequency[sum] = (sumFrequency[sum] || 0) + 1;
     }
-    return count;
+    return count; // Return the total count of subarrays that sum to k
 }
 console.log(subarraySum([1, 1, 1], 2)); // Output: 2
 
