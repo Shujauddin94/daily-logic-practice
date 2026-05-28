@@ -12,7 +12,7 @@ function subarraySum(nums, k) {
     }
     return count;
 }
-console.log(subarraySum([1, 1, 1], 2)); 
+console.log(subarraySum([1, 1, 1], 2)); // Output: 2
 
 // Another way to solve the problem using prefix sums and a hash map
 function subarraySumAlternative(nums, k) {
