@@ -8,7 +8,7 @@ function subarraySum(nums, k) {
         if (sumFrequency.hasOwnProperty(sum - k)) {
             count += sumFrequency[sum - k];
         }
-        sumFrequency[sum] = (sumFrequency[sum] || 0) + 1;
+        sumFrequency[sum] = (sumFrequency[sum] || 0) + 1; // Update the frequency of the current sum
     }
     return count; // Return the total count of subarrays that sum to k
 }
