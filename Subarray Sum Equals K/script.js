@@ -27,6 +27,6 @@ function subarraySumAlternative(nums, k) {
         }
         prefixSumCount.set(currentSum, (prefixSumCount.get(currentSum) || 0) + 1); // Update the count of the current prefix sum in the map
     }
-    return totalCount;
+    return totalCount; // Return the total count of subarrays that sum to k
 }
 console.log(subarraySumAlternative([1, 2, 3], 3)); // Output: 2
