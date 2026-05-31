@@ -13,7 +13,7 @@ function twoSum(numbers, target) {
 console.log(twoSum([2, 7, 11, 15], 9)); // Output: [0, 1]
 
 // Easier method (less efficient)
-function twoSumSlow(nums, target) {
+function twoSumSlow(nums, target) { // Function to find two numbers that add up to the target using a brute-force approach
   for (let i = 0; i < nums.length; i++) { // Loop through each number
     for (let j = i + 1; j < nums.length; j++) { // Loop through the numbers after the current number
       if (nums[i] + nums[j] === target) { // Check if the sum of the two numbers equals the target
