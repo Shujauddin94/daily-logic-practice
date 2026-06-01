@@ -2,7 +2,7 @@
 function isValidEmail(email) {
     // Regular expression for validating an email address
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email); 
+    return emailRegex.test(email); // This regex checks for a basic pattern of email addresses
 }
 console.log(isValidEmail("test@example.com"));// true
 console.log(isValidEmail("invalid-email"));// false
