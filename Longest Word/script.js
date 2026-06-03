@@ -11,7 +11,7 @@ function findLongestWord(sentence) {
 }
 console.log(findLongestWord("The cat tried to jump")); // Output: "tried"
 
-function findLongestWord1(sentence) {
+function findLongestWord1(sentence) { // This function does the same thing as the previous one but uses regex to split the sentence into words, which can handle punctuation better.
   const words = sentence.match(/\b\w+\b/g) || []; // Split sentence into words using regex dont need to remember just google it thats what i did in this another function
   let longest = ""; // Initialize longest as an empty string
 
