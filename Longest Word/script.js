@@ -17,7 +17,7 @@ function findLongestWord1(sentence) {
 
   for (const word of words) {
     if (word.length > longest.length) { // Compare the length of the current word with the longest word found so far
-      longest = word; // Update longest if the current word is longer
+      longest = word; 
     }
   }
 
