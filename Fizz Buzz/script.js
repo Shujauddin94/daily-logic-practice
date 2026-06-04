@@ -22,4 +22,4 @@ function fizzBuzz2(n) {
 
   return result || n.toString(); // Return the result if it's not empty, otherwise return n as a string
 }
-console.log(fizzBuzz2(10)); // Output: Buzz
+console.log(fizzBuzz2(10)); 
