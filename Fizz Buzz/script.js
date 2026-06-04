@@ -14,8 +14,8 @@ console.log(fizzBuzz(15)); // Output: FizzBuzz
 
 // Another shorter way
 
-function fizzBuzz2(n) {
-  let result = ""; // Initialize an empty string to build the result
+function fizzBuzz2(n) { 
+  let result = ""; 
 
   if (n % 3 === 0) result += "Fizz";// Append "Fizz" to the result if n is a multiple of 3
   if (n % 5 === 0) result += "Buzz"; // Append "Buzz" to the result if n is a multiple of 5
