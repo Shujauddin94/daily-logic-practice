@@ -12,7 +12,7 @@ function findMax(arr) { // Function to find the maximum element in an array
     return max; // Return the maximum element found
 }
 console.log(findMax([3, 1, 4, 1, 5, 9, 2, 6, 5])); // Output: 9
-console.log(findMax([])); // Output: null
+console.log(findMax([])); 
 
 // Easier method using Math.max and spread operator
 function findMax2(arr) { // Function to find the maximum element using Math.max and spread operator
