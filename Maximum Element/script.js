@@ -16,7 +16,7 @@ console.log(findMax([])); // Output: null
 
 // Easier method using Math.max and spread operator
 function findMax2(arr) { // Function to find the maximum element using Math.max and spread operator
-  return Math.max(...arr); // Spread the array elements as individual arguments to Math.max
+  return Math.max(...arr); 
 }
 
 console.log(findMax2([3, 7, 2, 9, 5])); // Output: 9
