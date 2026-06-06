@@ -19,6 +19,6 @@ function findMissingNumber2(arr, n) {
     }
 
     // Step 3: The missing number
-    return expectedSum - actualSum; // The missing number is the difference between the expected sum and the actual sum
+    return expectedSum - actualSum; 
 }
 console.log(findMissingNumber2([1, 2, 4, 5], 5)); // Output: 3
