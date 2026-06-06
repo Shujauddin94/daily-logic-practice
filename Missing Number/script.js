@@ -14,7 +14,7 @@ function findMissingNumber2(arr, n) {
 
     // Step 2: Calculate the actual sum of the array
     let actualSum = 0; // Initialize actual sum to 0
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) { // Loop through the array
         actualSum += arr[i]; // Add each element of the array to the actual sum
     }
 
