@@ -17,5 +17,5 @@ function reverseWords(sentence) {
 }
 
 
-console.log(reverseWords("Hello world from JavaScript"));
+console.log(reverseWords("Hello world from JavaScript")); // Output: "JavaScript from world Hello"
 // Output: "JavaScript from world Hello"
