@@ -13,4 +13,6 @@ function gcdRecursive(a, b) {
   return gcdRecursive(b, a % b); // Recursive call with the second number and the remainder of the division of the first number by the second number    
 }
 // Test cases for the gcdRecursive function
+
 console.log(gcdRecursive(48, 18)); // Output: 6
+console.log(gcdRecursive(100, 25)); // Output: 25
