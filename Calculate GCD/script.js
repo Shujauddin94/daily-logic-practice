@@ -16,3 +16,4 @@ function gcdRecursive(a, b) {
 
 console.log(gcdRecursive(48, 18)); // Output: 6
 console.log(gcdRecursive(100, 25)); // Output: 25
+console.log(gcdRecursive(17, 13)); // Output: 1
