@@ -9,4 +9,5 @@ function calculatePower2(base, exponent) { // Using exponentiation operator to c
     return base ** exponent;   // Using exponentiation operator to calculate power
 }
 //  Test cases for the calculatePower2 function
+console.log(calculatePower2(3, 4)); // Output: 81
 console.log(calculatePower2(2, 3)); // Output: 8
