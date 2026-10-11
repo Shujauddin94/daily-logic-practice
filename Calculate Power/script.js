@@ -8,4 +8,5 @@ console.log(calculatePower(2, 3)); // Output: 8
 function calculatePower2(base, exponent) { // Using exponentiation operator to calculate power
     return base ** exponent;   // Using exponentiation operator to calculate power
 }
+//  Test cases for the calculatePower2 function
 console.log(calculatePower2(2, 3)); // Output: 8
