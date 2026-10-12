@@ -17,4 +17,5 @@ function capitalizeWords2(sentence) {
     .join(" "); 
 }
 // Test cases for the capitalizeWords2 function
+ console.log(capitalizeWords2("hello world from javascript")); // Output: "Hello World From Javascript"
 console.log(capitalizeWords2("hello world from javascript")); // Output: "Hello World From Javascript"..
