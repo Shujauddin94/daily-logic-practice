@@ -26,5 +26,6 @@ function countVowels(str) {
 
   return count; // Return the total count of vowels
 }
-// Example usage:
+// Example usage
+
 console.log(countVowels("Hello")); // Output: 2
