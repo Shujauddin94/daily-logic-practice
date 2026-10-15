@@ -13,3 +13,4 @@ function countWordsRegex(sentence) {
 }
 // Example usage
 console.log(countWordsRegex("Hello, how are you today?")); // Output: 6
+console.log(countWordsRegex("Hello, how are you today?")); // Output: 6
