@@ -32,5 +32,6 @@ function factorialloop(n) {
     return result; 
 }
 // Example usage
+console.log(factorialloop(5));
 console.log(factorialloop(8)); // Output: 40320
 console.log(factorialloop(-3)); // Output: "Factorial is not defined for negative numbers"
