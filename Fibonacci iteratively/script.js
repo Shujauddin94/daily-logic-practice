@@ -25,5 +25,6 @@ function fibonacciArr(n) { // Function to generate the n-th Fibonacci number usi
   return fib[n]; // Return the n-th Fibonacci number from the array
 }
 // Example usage
+console.log(fibonacciArr(6)); // Output: 8
 console.log(fibonacciArr(6)); // Output: 8.
 console.log(fibonacciArr(10)); // Output: 55
