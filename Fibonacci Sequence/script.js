@@ -18,6 +18,7 @@ function fibonacci(n) {
 
   return b; // Return the nth Fibonacci number
 }
+// Example usage
 console.log(fibonacci(10)); // Output: 55
 
 // Now with full series generation
