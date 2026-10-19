@@ -14,6 +14,7 @@ console.log(fizzBuzz(15)); // Output: FizzBuzz
 
 // Another shorter way
 // Write a function that returns a string, such as, For multiples of three, return "Fizz" instead of the number and for the multiples of five, return "Buzz". For numbers which are multiples of both three and five, return "FizzBuzz".
+ 
 function fizzBuzz2(n) { 
   let result = ""; 
 
