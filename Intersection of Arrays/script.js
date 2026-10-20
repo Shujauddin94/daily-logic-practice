@@ -9,4 +9,5 @@ console.log(intersection([1, 2, 3], [2, 3, 4])); // Output: [2, 3]
 function intersectionUsingIncludes(arr1, arr2) { // This function finds the intersection of two arrays using filter and includes
     return arr1.filter(item => arr2.includes(item)); // Return elements present in both arrays
 }
+// Example usage
 console.log(intersectionUsingIncludes([1, 2, 3], [2, 3, 4])); // Output: [2, 3]
