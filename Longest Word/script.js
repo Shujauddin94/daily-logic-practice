@@ -24,5 +24,5 @@ function findLongestWord1(sentence) { // This function does the same thing as th
   return longest; // Return the longest word found in the sentence
 }
 
-
+console.log(findLongestWord1("The cat tried to jump")); // Output: "tried"
 console.log(findLongestWord1("He jumped over the fence")); // Output: "jumped"
