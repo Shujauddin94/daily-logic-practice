@@ -20,7 +20,7 @@ function findLongestWord1(sentence) { // This function does the same thing as th
       longest = word; // Update longest if the current word is longer
     }
   }
-
+ // Return the longest word found in the sentence
   return longest; // Return the longest word found in the sentence
 }
 
