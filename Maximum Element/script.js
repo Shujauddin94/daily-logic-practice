@@ -19,6 +19,6 @@ function findMax2(arr) { // Function to find the maximum element using Math.max 
   return Math.max(...arr); 
 }
 // Test cases for the findMax2 function
-console.log(findMax2([3, 7, 2, 9, 5]));
+console.log(findMax2([3, 7, 2, 9, 5])); // Output: 9
 // Test cases for the findMax2 function
 console.log(findMax2([3, 7, 2, 9, 5])); // Output: 9
