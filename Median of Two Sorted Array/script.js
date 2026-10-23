@@ -33,7 +33,7 @@ console.log(findMedianSortedArrays([1, 2], [3, 4])); // Output: 2.5
 
 function findMedianSortedArrays(nums1, nums2) { // We define a function called findMedianSortedArrays that takes two sorted arrays, nums1 and nums2, as input and returns the median of the combined sorted array.
   // Ensure nums1 is the smaller array
-  if (nums1.length > nums2.length) {
+  if (nums1.length > nums2.length) {// We check if nums1 is larger than nums2. If it is, we call the function recursively with the arguments swapped. This ensures that nums1 is always the smaller array, which simplifies the logic for finding the median.
     return findMedianSortedArrays(nums2, nums1); // We check if nums1 is larger than nums2. If it is, we call the function recursively with the arguments swapped. This ensures that nums1 is always the smaller array, which simplifies the logic for finding the median.
   }
 
