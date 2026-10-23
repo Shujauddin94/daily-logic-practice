@@ -55,7 +55,7 @@ function findMedianSortedArrays(nums1, nums2) { // We define a function called f
 
     // Correct partition found
     if (maxLeftX <= minRightY && maxLeftY <= minRightX) { // We check if we have found the correct partition by comparing the maximum of the left halves with the minimum of the right halves. If maxLeftX is less than or equal to minRightY and maxLeftY is less than or equal to minRightX, it means we have found the correct partition.
-      if ((x + y) % 2 === 0) {
+      if ((x + y) % 2 === 0) { // If the total length of the combined arrays is even, the median is the average of the maximum of the left halves and the minimum of the right halves. We use Math.max to find the maximum of the left halves and Math.min to find the minimum of the right halves. Finally, we divide the sum by 2 to get the average, which is the median when the total length is even.
         return (
           Math.max(maxLeftX, maxLeftY) + // If the total length of the combined arrays is even, the median is the average of the maximum of the left halves and the minimum of the right halves. We use Math.max to find the maximum of the left halves and Math.min to find the minimum of the right halves. Finally, we divide the sum by 2 to get the average, which is the median when the total length is even.
           Math.min(minRightX, minRightY) // We calculate the median by taking the average of the maximum of the left halves and the minimum of the right halves. We use Math.max to find the maximum of the left halves and Math.min to find the minimum of the right halves. Finally, we divide the sum by 2 to get the average, which is the median when the total length is even.
