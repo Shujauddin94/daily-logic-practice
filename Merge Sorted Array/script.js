@@ -30,7 +30,7 @@ function mergeSortedArrays2(arr1, arr2) {
     if (arr1[i] <= arr2[j]) {
       result.push(arr1[i]); // Add the smaller element to the result array
       i++;
-    } else {
+    } else { // Compare elements from both arrays
       result.push(arr2[j]); // Add the smaller element to the result array
       j++;
     }
