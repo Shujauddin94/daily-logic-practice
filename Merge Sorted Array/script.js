@@ -26,7 +26,7 @@ function mergeSortedArrays2(arr1, arr2) {
   let j = 0;
 
   // Compare elements from both arrays
-  while (i < arr1.length && j < arr2.length) {
+  while (i < arr1.length && j < arr2.length) {// Compare elements from both arrays
     if (arr1[i] <= arr2[j]) {
       result.push(arr1[i]); // Add the smaller element to the result array
       i++;
