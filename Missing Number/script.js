@@ -8,7 +8,7 @@ console.log(findMissingNumber([1, 2, 4, 5, 6], 6)); // Output: 3
 
 // Easier method
 
-function findMissingNumber2(arr, n) {
+function findMissingNumber2(arr, n) { // Step 1: Calculate the expected sum from 1 to n
     // Step 1: Calculate the expected sum from 1 to n
     let expectedSum = n * (n + 1) / 2; // The formula for the sum of the first n natural numbers is n(n + 1) / 2
 
