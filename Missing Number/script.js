@@ -1,5 +1,5 @@
 // Write a function to find the missing number in an array of integers from 1 to n
-function findMissingNumber(arr, n) {
+function findMissingNumber(arr, n) { // Step 1: Calculate the expected sum of numbers from 1 to n
     const expectedSum = (n * (n + 1)) / 2; // Formula to calculate the sum of first n natural numbers
     const actualSum = arr.reduce((acc, num) => acc + num, 0); // Calculate the sum of the elements in the array
     return expectedSum - actualSum; // The missing number is the difference between the expected sum and the actual sum
