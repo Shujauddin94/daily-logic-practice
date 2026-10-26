@@ -1,6 +1,6 @@
 // Write a function that takes a string and returns an object with the count of occurrence of each character.
 function countCharacterOccurrences(str) { // Create a function that takes a string and returns an object with the count of occurrence of each character.
-    const charCount = {};
+    const charCount = {}; // Create an empty object to store character counts
     for (let char of str) {
         charCount[char] = (charCount[char] || 0) + 1;// Update the count for each character in the object
     }
