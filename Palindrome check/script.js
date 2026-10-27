@@ -11,7 +11,7 @@ console.log(isPalindrome("hello"));   // false
 // If you want to that ignores spaces, punctuation, and case, use this instead
 
 
-function isPalindrome2(str) {
+function isPalindrome2(str) {// Create a function that takes a string and checks if it is a palindrome, ignoring spaces, punctuation, and case
   const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, ''); // remove non-alphanumeric characters and convert to lowercase
   return cleaned === cleaned.split('').reverse().join(''); // true if palindrome, false otherwise
 }
