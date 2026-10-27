@@ -1,5 +1,5 @@
 // Write a function to check if a given string is a palindrome
-function isPalindrome(str) {
+function isPalindrome(str) { // Create a function that takes a string and checks if it is a palindrome
   const reversed = str.split('').reverse().join(''); // reverse the string
   return str === reversed; // true if palindrome, false otherwise
 }
