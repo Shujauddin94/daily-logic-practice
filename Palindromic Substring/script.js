@@ -1,5 +1,5 @@
 // Write a function to count the number of palindromic substrings in a string.
-function countPalindromicSubstrings(s) {
+function countPalindromicSubstrings(s) { // Create a function that takes a string and counts the number of palindromic substrings
     let count = 0;
     const n = s.length; // Length of the string
 
