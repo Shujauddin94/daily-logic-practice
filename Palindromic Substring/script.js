@@ -4,7 +4,7 @@ function countPalindromicSubstrings(s) { // Create a function that takes a strin
     const n = s.length; // Length of the string
 
     // Helper function to expand around center
-    function expandAroundCenter(left, right) {
+    function expandAroundCenter(left, right) { // Create a helper function that takes two pointers (left and right) and expands around the center
         while (left >= 0 && right < n && s[left] === s[right]) {
             count++; // Found a palindrome, increment count
             left--; // Move left pointer to the left
