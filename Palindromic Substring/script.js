@@ -30,7 +30,7 @@ function countPalindromicSubstrings2(s) { // Create a function that takes a stri
   function expand(left, right) { // Create a helper function that takes two pointers (left and right) and expands around the center
     while (left >= 0 && right < s.length && s[left] === s[right]) { // Check for palindrome
       count++; // Increment count for each palindrome found
-      left--;
+      left--; // Move left pointer to the left
       right++;
     }
   }
