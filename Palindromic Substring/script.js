@@ -31,7 +31,7 @@ function countPalindromicSubstrings2(s) { // Create a function that takes a stri
     while (left >= 0 && right < s.length && s[left] === s[right]) { // Check for palindrome
       count++; // Increment count for each palindrome found
       left--; // Move left pointer to the left
-      right++;
+      right++; // Move right pointer to the right
     }
   }
 
