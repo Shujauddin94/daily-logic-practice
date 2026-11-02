@@ -12,7 +12,7 @@ function countPalindromicSubstrings(s) { // Create a function that takes a strin
         }
     }
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) { // Loop through each character in the string
         expandAroundCenter(i, i);     // Odd length palindromes
         expandAroundCenter(i, i + 1); // Even length palindromes
     }
