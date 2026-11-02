@@ -17,7 +17,7 @@ function countPalindromicSubstrings(s) { // Create a function that takes a strin
         expandAroundCenter(i, i + 1); // Even length palindromes
     }
 
-    return count;
+    return count; // Return the total count of palindromic substrings
 }
 console.log(countPalindromicSubstrings("abba")); // Output: 6
 console.log(countPalindromicSubstrings("abc"));  // Output: 3
