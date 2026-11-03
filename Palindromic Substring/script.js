@@ -25,7 +25,7 @@ console.log(countPalindromicSubstrings("abc"));  // Output: 3
 // Another way to solve this problem
 
 function countPalindromicSubstrings2(s) { // Create a function that takes a string and counts the number of palindromic substrings
-  let count = 0;
+  let count = 0; // Initialize a counter for palindromic substrings
 
   function expand(left, right) { // Create a helper function that takes two pointers (left and right) and expands around the center
     while (left >= 0 && right < s.length && s[left] === s[right]) { // Check for palindrome
