@@ -37,7 +37,7 @@ function countPalindromicSubstrings2(s) { // Create a function that takes a stri
 
   for (let i = 0; i < s.length; i++) { // Loop through each character in the string
     // Odd-length palindromes
-    expand(i, i);
+    expand(i, i); // Expand around the center for odd-length palindromes
     // Even-length palindromes
     expand(i, i + 1);
   }
