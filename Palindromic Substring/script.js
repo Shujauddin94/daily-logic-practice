@@ -39,7 +39,7 @@ function countPalindromicSubstrings2(s) { // Create a function that takes a stri
     // Odd-length palindromes
     expand(i, i); // Expand around the center for odd-length palindromes
     // Even-length palindromes
-    expand(i, i + 1);
+    expand(i, i + 1); // Expand around the center for even-length palindromes
   }
 
   return count; // Return the total count of palindromic substrings
