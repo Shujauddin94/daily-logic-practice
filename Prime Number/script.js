@@ -1,7 +1,7 @@
 // Write a function to check if a given number is prime
 function isPrime(num) { // Create a function that takes a number and checks if it is prime
     if (num <= 1) return false; // 0 and 1 are not prime
-    if (num <= 3) return true;
+    if (num <= 3) return true; // 2 and 3 are prime
     if (num % 2 === 0 || num % 3 === 0) return false; // divisible by 2 or 3 → not prime
     for (let i = 5; i * i <= num; i += 6) {
         if (num % i === 0 || num % (i + 2) === 0) {
