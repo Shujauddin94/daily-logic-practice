@@ -4,7 +4,7 @@ function isPrime(num) { // Create a function that takes a number and checks if i
     if (num <= 3) return true; // 2 and 3 are prime
     if (num % 2 === 0 || num % 3 === 0) return false; // divisible by 2 or 3 → not prime
     for (let i = 5; i * i <= num; i += 6) { // check for factors from 5 to sqrt(num) with a step of 6
-        if (num % i === 0 || num % (i + 2) === 0) {
+        if (num % i === 0 || num % (i + 2) === 0) { // check if num is divisible by i or i+2
             return false; // divisible by i or i+2 → not prime
         }
     }
