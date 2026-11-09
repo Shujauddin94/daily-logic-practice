@@ -1,5 +1,5 @@
 // Write a function that takes a string as input and returns the string reversed.
-function reverseString(str) {
+function reverseString(str) { // Create a function that takes a string and reverses it
     return str.split('').reverse().join('');
 }
 console.log(reverseString("hello")); // Output: "olleh"
