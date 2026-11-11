@@ -1,6 +1,6 @@
 // Write a function that reverses the digits of an integer.
 function reverseInteger(num) { // Check if the number is negative 
-    const isNegative = num < 0;
+    const isNegative = num < 0; // Store the sign of the number
     const reversedNum = parseInt(Math.abs(num).toString().split('').reverse().join(''), 10); // Convert back to integer
     return isNegative ? -reversedNum : reversedNum; // Preserve the sign of the original number
 }
