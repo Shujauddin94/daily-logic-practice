@@ -1,5 +1,5 @@
 // Given an array of integers, find the total number of continuous subarrays whose sum equals a specific target, K.
-function subarraySum(nums, k) {
+function subarraySum(nums, k) {//
     let count = 0;
     let sum = 0;
     const sumFrequency = {0: 1}; // Initialize with sum 0 occurring once
