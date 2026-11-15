@@ -5,7 +5,7 @@ function subarraySum(nums, k) {// Initialize a counter for the number of subarra
     const sumFrequency = {0: 1}; // Initialize with sum 0 occurring once
     for (let num of nums) {
         sum += num;
-        if (sumFrequency.hasOwnProperty(sum - k)) {
+        if (sumFrequency.hasOwnProperty(sum - k)) { //
             count += sumFrequency[sum - k];
         }
         sumFrequency[sum] = (sumFrequency[sum] || 0) + 1; // Update the frequency of the current sum
