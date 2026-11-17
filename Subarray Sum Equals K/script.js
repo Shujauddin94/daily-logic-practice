@@ -3,7 +3,7 @@ function subarraySum(nums, k) {// Initialize a counter for the number of subarra
     let count = 0;// Initialize a counter for the number of subarrays and a variable to keep track of the cumulative sum
     let sum = 0;
     const sumFrequency = {0: 1}; // Initialize with sum 0 occurring once
-    for (let num of nums) {
+    for (let num of nums) {//
         sum += num;
         if (sumFrequency.hasOwnProperty(sum - k)) { // Check if there is a previous cumulative sum that would make the current subarray sum to k
             count += sumFrequency[sum - k];
