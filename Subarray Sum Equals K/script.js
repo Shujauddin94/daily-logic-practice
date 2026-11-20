@@ -6,7 +6,7 @@ function subarraySum(nums, k) {// Initialize a counter for the number of subarra
     for (let num of nums) {// Iterate through each number in the array
         sum += num; // Update the cumulative sum with the current number
         if (sumFrequency.hasOwnProperty(sum - k)) { // Check if there is a previous cumulative sum that would make the current subarray sum to k
-            count += sumFrequency[sum - k];
+            count += sumFrequency[sum - k]; //
         }
         sumFrequency[sum] = (sumFrequency[sum] || 0) + 1; // Update the frequency of the current sum
     }
