@@ -22,7 +22,7 @@ function subarraySumAlternative(nums, k) { // This function uses a hash map to s
     let totalCount = 0;  // This variable will count the total number of subarrays that sum to k
     for (let num of nums) {
         currentSum += num; // Update the current prefix sum by adding the current number
-        if (prefixSumCount.has(currentSum - k)) {
+        if (prefixSumCount.has(currentSum - k)) { //
             totalCount += prefixSumCount.get(currentSum - k); // If the current prefix sum minus k exists in the map, it means there are subarrays that sum to k, so we add their count to the total
         }
         prefixSumCount.set(currentSum, (prefixSumCount.get(currentSum) || 0) + 1); // Update the count of the current prefix sum in the map
