@@ -1,7 +1,7 @@
 // Given an array of numbers and a target sum, find two numbers in the array that add up to the target and return their indexes.
 function twoSum(numbers, target) { // Function to find two numbers that add up to the target using a hash map for efficient lookup
     const numMap = new Map(); // Map to store numbers and their indices
-    for (let i = 0; i < numbers.length; i++) { //
+    for (let i = 0; i < numbers.length; i++) { // Loop through each number in the array
         const complement = target - numbers[i]; // Calculate complement
         if (numMap.has(complement)) { // Check if complement exists
             return [numMap.get(complement), i];  // Return indices of the two numbers
