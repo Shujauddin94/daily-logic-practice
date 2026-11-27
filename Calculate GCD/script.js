@@ -1,5 +1,5 @@
 // Write a function to calculate the GCD of two numbers.
-function gcd(a, b) { //
+function gcd(a, b) { // This function calculates the GCD of two numbers using the Euclidean algorithm
     if (b === 0) { // Base case: if the second number is 0, the GCD is the first number
         return a; // If the second number is 0, return the first number as the GCD
     }
